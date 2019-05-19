@@ -1,3 +1,6 @@
+*, *:after {
+  box-sizing: border-box;
+}
 body {
   background-color: #f4f6f8;
   color: #16181e;
@@ -8,10 +11,13 @@ main {
     width: 100%;
   }
   h1 {
-    font-size: 2em;
+    font-weight: 300;
+    font-size: 3.5em;
+    
   }
   h2 {
-    font-size: 1.7em;
+    font-size: 2.4em;
+    font-weight: 300;
   }
   section.section {
     display: flex;
@@ -34,7 +40,10 @@ main {
       min-width: auto;
       max-width: 100%;
       &.paragraph-intro {
-        font-size: 1.2em;
+        font-size: 1.4em;
+        margin-top: 0;
+        font-weight: 300;
+        width: 100%;
       }
       &.paragraph-center {
         // max-width: 50%;
@@ -47,4 +56,7 @@ main {
     }
   
   }
+}
+.text-center {
+  text-align: center;
 }

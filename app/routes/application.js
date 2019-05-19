@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
-  navbar: service(),
+  // navbar: service(),
   metrics: service(),
   fastboot: service(),
   router: service(),
@@ -11,7 +11,7 @@ export default Route.extend({
     this._super(...arguments);
 
     this.router.on('routeDidChange', () => {
-      this.navbar.closePopupMenu();
+      // this.navbar.closePopupMenu();
       this._trackPage();
     })
   },

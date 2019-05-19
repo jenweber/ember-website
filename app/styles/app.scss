@@ -4,19 +4,36 @@ body {
 }
 main {
   width: 100%;
-  section {
-    @media screen and (min-width:1200px) {
-      width: 1200px;
-      max-width: 1200px;
+  section.section {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    @media screen and (min-width: 1200px) {
+      padding: 0 20%;
     }
     h2 {
       color: #16181e;
     }
-    &.dark {
+    &.section-dark {
       background-color: #16181e;
       color: white;
       h1, h2, h3 {
         color: white;
+      }
+    }
+    p {
+      min-width: auto;
+      max-width: 100%;
+      &.paragraph-intro {
+        font-size: 1.2em;
+      }
+      &.paragraph-center {
+        // max-width: 50%;
+        max-width: 500px;
+        margin: 0 auto;
+        align-self: center;
+        display: flex;
+        justify-content: center;
       }
     }
   

@@ -1,14 +1,28 @@
 @import 'variables';
 
 body {
-  background-color: #f4f6f8;
+	background-color: #f4f6f8;
+	margin: 0;
 }
 
-// button component
+.section-dark {
+	background-color: $background-dark;
+	color: $very-white;
+	margin: 0;
+	padding: 20px;
+}
+
+// buttons and links
 
 .link-button-orange {
 	background-color: $ember-orange;
 	border-radius: 8px;
 	color: $very-white;
 	padding: 8px 20px;
+	margin: 10px;
+	text-decoration: none;
+}
+
+.link-emphasis-white {
+	color: $very-white;
 }

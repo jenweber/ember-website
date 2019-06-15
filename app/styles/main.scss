@@ -12,6 +12,30 @@ body {
 	color: $text-dark;
 }
 
+// Typography
+
+.tiny-text {
+	font-size: 0.8em;
+}
+
+.text-light-gray {
+	color: $text-gray;
+}
+
+.text-emphasis-bold {
+	font-weight: bold;
+}
+
+.text-emphasis-size {
+	font-size: 1.15rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+// utility classes
+
 section {
 	padding: $generous-padding;
 }
@@ -21,16 +45,6 @@ section {
 	color: $very-white;
 	margin: 0;
 	padding: $super-padding;
-}
-
-// Typography
-
-.tiny-text {
-	font-size: 0.8em;
-}
-
-.text-light-gray {
-	color: $text-gray;
 }
 
 .standard-padding {
@@ -47,6 +61,11 @@ section {
 
 .generous-row {
 	padding: $generous-row;
+}
+
+.super-inset {
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 // buttons and links

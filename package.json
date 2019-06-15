@@ -70,7 +70,8 @@
   },
   "ember-addon": {
     "paths": [
-      "lib/content-data-generator"
+      "lib/content-data-generator",
+      "lib/ember-styleguide"
     ]
   },
   "fastbootDependencies": [

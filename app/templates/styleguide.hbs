@@ -1,64 +1,119 @@
+<div class="generous-padding">
+  <h1>Typography</h1>
 
-<h1>Typography</h1>
+  <h1>H1 example</h1>
+  <h2>H2 example</h2>
+  <h3>H3 example</h3>
+  <h4>H4 example</h4>
+  <h5>H5 example</h5>
 
-<h1>H1 example</h1>
-<h2>H2 example</h2>
-<h3>H3 example</h3>
-<h4>H4 example</h4>
-<h5>H5 example</h5>
+  <p>paragraph</p>
 
-<p>paragraph</p>
+  <p>Add "hug" to reduce the padding on any element above!</p>
 
-<ol>
-	<li>ordered list</li>
-	<li>ordered list</li>
-</ol>
+  <ol>
+    <li>ordered list</li>
+    <li>ordered list</li>
+  </ol>
 
-<ul>
-	<li>unordered list</li>
-	<li>unordered list</li>
-</ul>
+  <ul>
+    <li>unordered list</li>
+    <li>unordered list</li>
+  </ul>
 
-<p>Utility Classes: add "hug" to reduce the padding on any element above</p>
+  <div class="tiny-text">
+    Use the class "tiny-text"
+  </div>
 
-<hr>
+  <div class="text-light-gray tiny-text">
+    Use the class "text-light-gray tiny-text"
+  </div>
 
-<h1>UI elements</h1>
+  <div class="text-emphasis-bold">
+    Some bold text! Add class "text-emphasis-bold"
+  </div>
 
-<p>
-<a class="link-button-orange">Learn more</a>
-<br>
-Use the "link-button-orange" class on an anchor tag to make it look like an orange button
-</p>
+  <div class="text-emphasis-size">
+    Some bigger text! Add class "text-emphasis-size"
+  </div>
 
-<br>
+  <br>
 
-<p>
+  <hr>
 
-<div style="background-color:#1c1e23; padding:20px;">
-<a class="link-emphasis-white">Another link</a>
-</div>
-Use the "link-emphasis-white" class on an anchor tag to make a white text link. Use against a dark background
-</p>
+  <h1>UI elements</h1>
 
-<br>
+  <p>
+    <a class="link-button-orange">Learn more</a>
+    Use the "link-button-orange" class on an anchor tag to make it look like an orange button
+  </p>
 
-<div class="tiny-text">
-	Use the class "tiny-text"
-</div>
+  <br>
 
-<div class="text-light-gray text-light-gray">
-	Use the class "text-light-gray tiny-text"
-</div>
+  <p>
 
-<br>
+    <div style="background-color:#1c1e23; padding:20px;">
+      <a class="link-emphasis-white">Another link</a>
+      <div style="color:white;">
+        Use the "link-emphasis-white" class on an anchor tag to make a white text link. Use against a dark background
+      </div>
+    </div>
+  </p>
 
-<div class="generous-padding" style="border:2px solid gray">
-	Use the class generous padding to get lots of padding around an element (does not include the border)
-</div>
+  <br>
 
-<br>
+<h1>Containers</h1>
 
-<div class="standard-padding" style="border:2px solid gray">
-	Use the class generous padding to get less top padding around an element
+<h2>Generic with left/right padding</h2>
+
+  <div class="generous-padding" style="border:2px solid gray">
+    Use the class generous padding to get lots of padding around an element (does not include the border).
+    Aligns left and right with standard, super, and generous padding.
+  </div>
+
+  <div class="standard-padding" style="border:2px solid gray">
+    Use the class standard padding to get some top and bottom padding around an element.
+    Aligns left and right with standard, super, and generous padding.
+  </div>
+
+<h2>Generic without left/right padding</h2>
+
+  <div class="standard-row" style="border:2px solid gray">
+    Add class "standard-row" to get some top and bottom padding only. No gutters.
+  </div>
+
+  <div class="generous-row" style="border:2px solid gray">
+    Add class "generous-row" to get more top and bottom padding only. No gutters.
+  </div>
+
+<h2>Main Sections</h2>
+
+  <section class="section section-dark">
+	<h2>Dark Section</h2>
+	<p>
+		A section with class "section section-dark" has lots of padding by default, even more than standard and generous.
+		It assumes you will use a Heading element though, so it doesn't have much top padding.
+		Headings assume a p after them.
+	</p>
+    <p class="super-inset text-center">
+      Use a p with class "super-inset text-center" to make a narrow column of centered text
+    </p>
+  </section>
+
+  <section>
+	<h2>Light section</h2>
+	<p>
+		A section element with "section" class inherits its background color, and has tons of padding.
+		Headings assume a p after them.
+	</p>
+    <p class="super-inset text-center">
+      Use a p with class "super-inset text-center" to make a narrow column of centered text
+	  inside these section containers
+    </p>
+  </section>
+
+  <section style="border:2px solid gray">
+    A section with no class has "generous padding" by default
+  </section>
+
 </div>

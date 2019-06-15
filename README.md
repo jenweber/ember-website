@@ -1,7 +1,8 @@
 # ember-website
 
-This project contains the current emberjs.com website, using server-side rendering techniques to generate a static website.
-Components come from [ember-styleguide](https://github.com/ember-learn/ember-styleguide).
+This project implements [RFC 425](https://github.com/emberjs/rfcs/blob/master/text/0425-website-redesign.md).
+
+It is a Work in Progress.
 
 ## Prerequisites
 

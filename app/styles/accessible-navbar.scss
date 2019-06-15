@@ -105,7 +105,7 @@ a {
       display: block;
       width: 100%; } }
 
-#nav > ul > li > a {
+#nav > ul > li > button {
   background-color: $background-dark; }
   #nav > ul > li > a:hover, #nav > ul > li > a:focus, #nav > ul > li > a.js-openSubMenu {
     background-color: $nav-background-hover-color; }

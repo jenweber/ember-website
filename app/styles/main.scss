@@ -1,16 +1,26 @@
 @import 'variables';
 
+$standard-padding: 10px 5%;
+$standard-row: 10px 0 0 0;
+$generous-padding: 30px 5%;
+$generous-row: 30px 0 10px 0;
+$super-padding: 10px 5% 60px 5%;
+
 body {
 	background-color: #f4f6f8;
 	margin: 0;
 	color: $text-dark;
 }
 
+section {
+	padding: $generous-padding;
+}
+
 .section-dark {
 	background-color: $background-dark;
 	color: $very-white;
 	margin: 0;
-	padding: 20px;
+	padding: $super-padding;
 }
 
 // Typography
@@ -24,11 +34,19 @@ body {
 }
 
 .standard-padding {
-	padding: 10px 5%;
+	padding: $standard-padding;
+}
+
+.standard-row {
+	padding: $standard-row;
 }
 
 .generous-padding {
-	padding: 30px 5%;
+	padding: $generous-padding;
+}
+
+.generous-row {
+	padding: $generous-row;
 }
 
 // buttons and links
@@ -38,12 +56,12 @@ body {
 	border-radius: 8px;
 	color: $very-white;
 	padding: 8px 20px;
-	margin: 10px;
 	text-decoration: none;
 }
 
 .link-emphasis-white {
 	color: $very-white;
+	margin: 0 15px;
 }
 
 // footer
@@ -86,5 +104,11 @@ body {
 		a:hover {
 			text-decoration: underline;
 		}
+	}
+
+	.footer-ember-logo img {
+		// keep this the same in nav and footer
+		height: $nav-min-height;
+		width: auto;
 	}
 }

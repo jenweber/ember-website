@@ -4,6 +4,8 @@ This project implements [RFC 425](https://github.com/emberjs/rfcs/blob/master/te
 
 It is a Work in Progress.
 
+Navbar based on [this codepen](https://codepen.io/vj/pen/rOgPEY)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

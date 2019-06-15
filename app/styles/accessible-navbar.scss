@@ -43,7 +43,10 @@ a {
       display: block; } }
 
 #nav li {
-  position: relative; }
+  position: relative;
+  margin-top: 1.5em;
+  top: 50%;
+  transform: translateY(-50%); }
 
 #nav a {
   text-decoration: none;

@@ -9,6 +9,11 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('learn');
   this.route('styleguide');
+  this.route('releases', function() {
+    this.route('release');
+    this.route('beta');
+    this.route('canary');
+  });
 });
 
 export default Router;

@@ -3,6 +3,7 @@
 body {
 	background-color: #f4f6f8;
 	margin: 0;
+	color: $text-dark;
 }
 
 .section-dark {
@@ -10,6 +11,24 @@ body {
 	color: $very-white;
 	margin: 0;
 	padding: 20px;
+}
+
+// Typography
+
+.tiny-text {
+	font-size: 0.8em;
+}
+
+.text-light-gray {
+	color: $text-gray;
+}
+
+.standard-padding {
+	padding: 10px 5%;
+}
+
+.generous-padding {
+	padding: 30px 5%;
 }
 
 // buttons and links
@@ -25,4 +44,47 @@ body {
 
 .link-emphasis-white {
 	color: $very-white;
+}
+
+// footer
+
+.footer-container {
+	// TODO make this whole thing use css grid responsively
+	background-color: $very-white;
+	
+	.footer-sponsors {
+		background-color: $background-light;
+		border-top: solid 2px darken( $background-light, 10% );
+		display: grid;
+		grid-template-columns: 50% 50%;
+		line-height: 40px;
+
+		img {
+			max-width: 80px;
+			vertical-align: middle;
+			margin-bottom:0.25em;
+		}
+	
+		a {
+			height:40px;
+			margin: 10px;
+		}
+	}
+
+
+	.footer-links {
+		display: grid;
+		grid-template-columns: 20% 20% 20% 20%;
+		border-bottom: 1px solid lighten( $text-gray, 40% );
+
+		a {
+			display: block;
+			line-height: 2.5em;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
 }

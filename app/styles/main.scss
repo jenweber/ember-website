@@ -3,3 +3,12 @@
 body {
   background-color: #f4f6f8;
 }
+
+// button component
+
+.link-button-orange {
+	background-color: $ember-orange;
+	border-radius: 8px;
+	color: $very-white;
+	padding: 8px 20px;
+}

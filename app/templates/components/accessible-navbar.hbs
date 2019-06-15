@@ -1,6 +1,6 @@
 <div class="nav-container">
   <nav id="nav">
-    <ul>
+    <ul role="menubar">
 
       <!-- Menu tooggle on smaller screens  -->
       <li id="toggleMenu" role="button" aria-haspopup="true">
@@ -10,41 +10,28 @@
       </li>
 
       <!-- Simple menu item without sub menu -->
-      <li><a href=""><img class='logo' src='/images/brand/ember_Ember-Dark.png' alt='Ember.js logo'></a></li>
+      <li role="none"><a role="menuitem" href=""><img class="logo" src="/images/brand/ember_Ember-Dark.png" alt='Ember.js logo'></a></li>
 
       <!--  Menu item with one sub menu -->
-      <li>
-        <a href="">Docs</a>
-
-        <ul>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-        </ul>
+      <NavDropdown @show={{action "show"}} @item="docs" @showItem={{this.docs}} @label="Docs" >
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </NavDropdown>
+      <NavDropdown @show={{action "show"}} @item="releases" @showItem={{this.releases}} @label="Releases">
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </NavDropdown>
+      <li role="none">
+        <a role="menuitem" href="">Blog</a>
       </li>
-      <li>
-        <a href="">Releases</a>
-        <ul>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Blog</a>
-      </li>
-      <li>
-        <a href="">Community</a>
-        <ul>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">About</a>
-        <ul>
-          <li><a href="#">Test</a></li>
-          <li><a href="#">Test</a></li>
-        </ul>
-      </li>
+      <NavDropdown @show={{action "show"}} @item="community" @showItem={{this.community}} @label="Community" >
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </NavDropdown>
+      <NavDropdown @show={{action "show"}} @item="about" @showItem={{this.about}} @label="About" >
+        <li><a href="#">Test</a></li>
+        <li><a href="#">Test</a></li>
+      </NavDropdown>
     </ul>
   </nav>
 </div><!-- .nav-container -->

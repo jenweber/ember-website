@@ -68,11 +68,6 @@
   "engines": {
     "node": "8.* || >= 10.* || >= 11.*"
   },
-  "ember-addon": {
-    "paths": [
-      "lib/content-data-generator"
-    ]
-  },
   "fastbootDependencies": [
     "algoliasearch"
   ]

@@ -8,7 +8,6 @@ $nav-item-width: 10em;
 $nav-togglemenu-color: #fff;
 $nav-togglemenu-background-color: #165f72;
 
-
 a {
   color: inherit; /*transition: all 300ms linear;*/ }
 
@@ -28,7 +27,7 @@ a {
 
 .nav-container {
   background-color: $background-dark;
-    min-height: $nav-min-height;
+  min-height: $nav-min-height;
 }
 #nav {
   position: relative;
@@ -51,6 +50,10 @@ a {
   height: 100%;
   display: block;
   padding: 0 1em; }
+
+#nav a .logo {
+  height: $nav-min-height;
+  width: auto; }
 
 @media screen and (min-width: 40em) {
   #nav a:focus {

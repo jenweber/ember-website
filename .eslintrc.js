@@ -2,11 +2,7 @@ module.exports = {
   root: true,
   parserOptions: {
     ecmaVersion: 2018,
-<<<<<<< HEAD
-    sourceType: 'module',
-=======
     sourceType: 'module'
->>>>>>> bf545cf... message
   },
   plugins: [
     'ember'

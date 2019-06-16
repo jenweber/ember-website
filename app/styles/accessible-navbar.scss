@@ -1,7 +1,8 @@
 @import 'variables';
 
 $nav-color: #ffffff;
-$nav-background-hover-color: darken($ember-orange,6%);
+$nav-background-color: darken($ember-orange,6%);
+$nav-background-hover-color: darken($ember-orange,0%);
 $nav-border-color: lighten($ember-orange,10%);
 $nav-item-width: 10em;
 $nav-togglemenu-color: #fff;
@@ -9,11 +10,11 @@ $nav-togglemenu-background-color: #165f72;
 $media-breakpoint: 47em;
 
 .active-nav {
-  background-color: $nav-background-hover-color;
+  background-color: $nav-background-color;
 }
 
 .drop-menu:hover {
-  background-color: $nav-background-hover-color;
+  background-color: $nav-background-color;
 }
 
 a {
@@ -144,7 +145,7 @@ a {
       #nav #toggleMenu.js-open .icon-menu {
         display: none; }
       #nav #toggleMenu.js-open a {
-        background-color: $nav-background-hover-color; }
+        background-color: $nav-background-color; }
     #nav #toggleMenu:not(.js-open) .icon-menu-closed {
       display: none; }
     #nav #toggleMenu:not(.js-open) .icon-menu {
@@ -156,7 +157,7 @@ span#toggleMenu-text {
 
 /* Second Level Dropdown */
 #nav > ul > li > ul {
-  background-color: $nav-background-hover-color; }
+  background-color: $nav-background-color; }
   @media screen and (min-width: $media-breakpoint) {
     #nav > ul > li > ul {
       top: 2.15em;
@@ -183,8 +184,8 @@ span#toggleMenu-text {
     padding-top: 3px;
     padding-bottom: 3px; }
 
-      #nav > ul > li > ul > li > a {
-  background-color: $nav-background-hover-color; }
+  #nav > ul > li > ul > li > a {
+    background-color: $nav-background-color; }
   #nav > ul > li > ul > li > a:hover, #nav > ul > li > ul > li > a:focus {
     background-color: $nav-background-hover-color; }
 

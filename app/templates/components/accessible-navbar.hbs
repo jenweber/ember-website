@@ -10,7 +10,7 @@
       </li>
 
       <!-- Simple menu item without sub menu -->
-      <li role="none"><a role="menuitem" href="https://emberjs.com" tabindex="0"><img class="logo" src="/images/brand/ember_Ember-Dark.png" alt='Ember.js logo'></a></li>
+      <li role="none"><a class="logo" role="menuitem" href=""><img src="/images/brand/ember_Ember-Dark.png" alt='Ember.js logo'></a></li>
 
       <!--  Menu item with one sub menu -->
       <NavDropdown @show={{action "show"}} @item="docs" @showItem={{this.docs}} @label="Docs" >
@@ -24,7 +24,7 @@
         <li><LinkTo @route="releases.canary">Canary</LinkTo></li>
         <li><LinkTo @route="releases.about">About</LinkTo></li>
       </NavDropdown>
-      <li role="none">
+      <li class="drop-menu" role="none">
         <a role="menuitem" href="">Blog</a>
       </li>
       <NavDropdown @show={{action "show"}} @item="community" @showItem={{this.community}} @label="Community" >

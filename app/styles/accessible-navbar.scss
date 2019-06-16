@@ -13,7 +13,7 @@ $media-breakpoint: 47em;
   background-color: $nav-background-color;
 }
 
-.drop-menu:hover {
+.drop-menu a:hover, .drop-menu a:focus {
   background-color: $nav-background-color;
   cursor: pointer;
 }

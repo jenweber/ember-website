@@ -80,6 +80,10 @@ section {
 	padding-right: 20%;
 }
 
+.half {
+  width: 50%;
+}
+
 // buttons and links
 
 .link-button-orange {
@@ -100,12 +104,58 @@ section {
 	font-size: $text-emphasis;
 }
 
+// articles and grid items
+.article-list-half {
+  margin: $generous-row;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.article-list-half divider {
+
+}
+
+.article-list-half article {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  grid-template-rows: $nav-min-height auto;
+  justify-self: left;
+  width: 95%;
+}
+
+.article-list-half article:last-child {
+  border-left: 1px solid $background-darker-gray;
+  padding-left: 20px;
+  justify-self: right;
+}
+
+.article-icon {
+  align-self: center;
+  justify-self: end;
+}
+
+.article-list-half article h3 {
+  grid-column-start: 2;
+  align-self: center;
+  margin: 0 15px;
+}
+
+.article-list-half article p {
+  grid-column-start: 2;
+  align-self: stretch;
+  margin: 0 15px;
+}
+
+.article-icon  {
+
+}
+
 // footer
 
 .footer-container {
 	// TODO make this whole thing use css grid responsively
 	background-color: $very-white;
-	
+
 	.footer-sponsors {
 		background-color: $background-light;
 		border-top: solid 2px darken( $background-light, 10% );
@@ -118,7 +168,7 @@ section {
 			vertical-align: middle;
 			margin-bottom:0.25em;
 		}
-	
+
 		a {
 			height:40px;
 			margin: 10px;

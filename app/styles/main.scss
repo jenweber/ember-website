@@ -33,6 +33,10 @@ body {
 	font-size: $text-emphasis;
 }
 
+.text-orange {
+	color: $ember-orange;
+}
+
 // utility classes
 
 section {
@@ -296,3 +300,25 @@ thead {
 	}
 
   }
+
+
+  // team page
+.team-member {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	padding: 10px;
+
+	img {
+		width: 100%;
+	}
+
+	.bio {
+		padding: 20px;
+	}
+}
+
+.team-members {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	margin-top: 20px;
+}

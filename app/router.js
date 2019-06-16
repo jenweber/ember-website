@@ -17,6 +17,15 @@ Router.map(function() {
     this.route('lts');
   });
   this.route('team');
+
+  this.route('about', function() {
+    this.route('legal');
+  });
+  this.route('mascots', function() {
+    this.route('faq');
+  });
+  this.route('logos');
+  this.route('security');
 });
 
 export default Router;

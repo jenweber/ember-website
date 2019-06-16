@@ -10,7 +10,7 @@
       </li>
 
       <!-- Simple menu item without sub menu -->
-      <li role="none"><a class="logo" role="menuitem" href=""><img src="/images/brand/ember_Ember-Dark.png" alt='Ember.js logo'></a></li>
+      <li role="none"><a class="logo" role="menuitem" href="/"><img src="/images/brand/ember_Ember-Dark.png" alt='Ember.js logo'></a></li>
 
       <!--  Menu item with one sub menu -->
       <NavDropdown @show={{action "show"}} @item="docs" @showItem={{this.docs}} @label="Docs" >
@@ -25,9 +25,12 @@
         <li><LinkTo @route="releases.about">About</LinkTo></li>
       </NavDropdown>
       <li class="drop-menu" role="menuitem">
-        <a role="menuitem" tabindex="0" href="">Blog</a>
+        <a role="menuitem" tabindex="0" href="https://blog.emberjs.com">Blog</a>
       </li>
       <NavDropdown @show={{action "show"}} @item="community" @showItem={{this.community}} @label="Community" >
+        <li></li>
+        <li><LinkTo @route="community">Get help</LinkTo></li>
+        <li><LinkTo @route="contribute">Contribute</LinkTo></li>
         <li><a role="menuitem" tabindex="0" href="https://jobs.emberjs.com">Job Board</a></li>
         <li><a role="menuitem" tabindex="0" href="https://emberconf.com">Ember Conf</a></li>
       </NavDropdown>
@@ -35,6 +38,8 @@
         <li><LinkTo @route="team">Team</LinkTo></li>
         <li><LinkTo @route="logos">Branding</LinkTo></li>
         <li><LinkTo @route="mascots">Mascots</LinkTo></li>
+        <li><LinkTo @route="ember-users">Who uses Ember</LinkTo></li>
+        <li><LinkTo @route="sponsors">Sponsors</LinkTo></li>
         <li><LinkTo @route="about.legal">Legal</LinkTo></li>
         <li><LinkTo @route="security">Security</LinkTo></li>
       </NavDropdown>

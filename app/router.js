@@ -31,6 +31,9 @@ Router.map(function() {
   this.route('masctos', function() {});
   this.route('contribute');
   this.route('community');
+  this.route('ember-users');
+  this.route('sponsors');
+  this.route('contributing');
 });
 
 export default Router;

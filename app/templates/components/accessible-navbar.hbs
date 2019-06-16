@@ -32,8 +32,7 @@
         <li><a role="menuitem" tabindex="0" href="#">Test</a></li>
       </NavDropdown>
       <NavDropdown @show={{action "show"}} @item="about" @showItem={{this.about}} @label="About" >
-        <li><a role="menuitem" tabindex="0" href="#">Test</a></li>
-        <li><a role="menuitem" tabindex="0" href="#">Test</a></li>
+        <li><LinkTo @route="team">Team</LinkTo></li>
       </NavDropdown>
     </ul>
   </nav>

@@ -1,1 +1,73 @@
-{{outlet}}
+{{!-- possible team values are comma separated: framework,learning,cli,data,steering,alumni --}}
+{{!-- photo file name should match github username --}}
+
+<section class="section section-dark section-top">
+  <h1>The Team</h1>
+  <p class="paragraph-intro">
+      Ember is an Open Source project that relies on the tireless support of individual contributors. These are the teams that guide the development and instruction of Ember.js.
+  </p>
+</section>
+
+<section class="section">
+    <h2>Core Team</h2>
+    <p>
+        There are five areas of focus within the core teams: steering committee, framework, cli, data, and learning.
+    </p>
+    <p>
+        By design, the Ember Core Team is a mix of people from many different companies,
+        countries, and career paths.
+        Core team members volunteer their own time to help move Ember forward.
+        Some core team members have partial support from their employers who
+        take an active role to help make Open Source projects sustainable.
+    </p>
+    <div class="team-members">
+        <CoreTeamMember @name="Yehuda Katz" @teams="framework, steering" @twitter="wycats" @github="wycats" @image="ykatz.jpg"/>
+        <CoreTeamMember @name="Tom Dale" @teams="framework, steering" @twitter="tomdale" @github="tomdale" @image="tdale.jpg"/>
+        <CoreTeamMember @name="Todd Jordan" @teams="learning" @twitter="tddjordan" @github="toddjordan" @image="tjordan.jpg"/>
+        <CoreTeamMember @name="Tobias Bieniek" @teams="cli" @twitter="TobiasBieniek" @github="Turbo87" @image="tbieniek.jpg"/>
+        <CoreTeamMember @name="Stefan Penner" @teams="framework, cli" @twitter="stefanpenner" @github="stefanpenner" @image="spenner.jpg"/>
+        <CoreTeamMember @name="Robert Jackson" @teams="framework, cli, data" @twitter="rwjblue" @github="rwjblue" @image="rjackson.jpg"/>
+
+        <CoreTeamMember @name="" @teams="" @twitter="" @github="" @image=""/>
+
+    </div>
+
+</section>
+
+<section class="section">
+    <h2 class="hug">About the core teams</h2>
+
+        <h3>Steering Committee</h3>
+        <p class="hug">
+            The Steering Committee is responsible for the overall governance of the Ember project.
+        </p>
+        <h3>Ember.js Framework</h3>
+        <p class="hug">
+            The Ember.js Framework team is responsible for the Ember.js codebase itself and technical direction of the framework.
+        </p>
+        <h3>Ember CLI</h3>
+        <p class="hug">
+            The Ember CLI core team is responsible for maintaining ember-cli, the command line interface for managing and packaging Ember.js applications and addons. The team also maintains many of the addons in the default blueprint.
+        </p>
+        <h3>Ember Data</h3>
+        <p class="hug">
+            The Ember Data core team is responsible for the official data persistence library for Ember.js applications.
+        </p>
+        <h3>Learning Team</h3>
+        <p class="hug">
+            The mission of the Ember Learning core team is to empower Ember users to learn, build and teach. This team is responsible for keeping the guides and API documentation updated, and manages the initiatives that support learning Ember.
+        </p>
+</section>
+
+<section class="section">
+    <h2 class="hug">Alumni</h2>
+    <p>Serving as a member of the Core Team(s) of an open source project like Ember is a huge amount of work. These are retired members of the Ember Core Teams, to whom we will always be grateful.</p>
+    <div class="team-members">
+        <CoreTeamMember @name="Trek Glowacki" @teams="alumni" @github="trek" @image="tglowaki.jpg"/>
+        <CoreTeamMember @name="Terence Lee" @teams="alumni" @github="hone" @image="tlee.png"/>
+        <CoreTeamMember @name="" @teams="alumni" @github="" @image=""/>
+        <CoreTeamMember @name="" @teams="alumni" @github="" @image=""/>
+        <CoreTeamMember @name="" @teams="alumni" @github="" @image=""/>
+    </div>
+
+</section>

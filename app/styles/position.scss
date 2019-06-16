@@ -24,7 +24,11 @@
   padding-bottom: 0;
 }
 
-.padding-sm {
+// normal, narrow, wide
+// TODO adjust padding amounts for accuracy
+// TODO change px to relative units for screen sizes
+
+.padding-narrow {
   padding: 0.25em;
   @media screen and (min-width: 768px) {
     padding: 0.5em;
@@ -33,5 +37,14 @@
     padding: 1em;
   }
 }
-.padding-md {}
-.padding-lg {}
+.padding-normal {
+  padding: 0.5em;
+  @media screen and (min-width: 786px) {
+    padding: 1em;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 1.5em;
+  }
+}
+.padding-wide {}
+

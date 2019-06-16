@@ -25,6 +25,7 @@ Router.map(function() {
     this.route('faq');
   });
   this.route('logos');
+  this.route('security');
 });
 
 export default Router;

@@ -1,40 +1,14 @@
 @import 'variables';
 
+*,
+*:after {
+	box-sizing: border-box;
+}
+
 body {
   background-color: #f4f6f8;
   margin: 0;
   color: $text-dark;
-}
-
-// Typography
-
-.text-tiny {
-  font-size: 0.8em;
-}
-
-.text-light-gray {
-  color: $text-gray;
-}
-
-.text-emphasis-bold {
-  font-weight: bold;
-}
-
-.text-emphasis-size {
-  font-size: $text-emphasis;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.paragraph-intro {
-  max-width: 600px;
-  font-size: $text-emphasis;
-}
-
-.text-orange {
-  color: $ember-orange;
 }
 
 // utility classes
@@ -57,7 +31,6 @@ body {
 .padding-standard {
   padding: $padding-standard;
 }
-
 .padding-generous {
   padding: $padding-generous;
 }
@@ -65,7 +38,6 @@ body {
 .row-standard {
   padding: $row-standard;
 }
-
 .row-generous {
   padding: $row-generous;
 }
@@ -84,7 +56,7 @@ body {
 .link-button-orange {
   background-color: $ember-orange;
   border-radius: 8px;
-  color: $very-white;
+  color: $text-white;
   padding: 8px 20px;
   text-decoration: none;
 
@@ -94,7 +66,7 @@ body {
 }
 
 .link-emphasis-white {
-  color: $very-white;
+  color: $text-white;
   margin: 0 15px;
   font-size: $text-emphasis;
 }
@@ -145,7 +117,7 @@ body {
 
 .footer-container {
   // TODO make this whole thing use css grid responsively
-  background-color: $very-white;
+  background-color: $text-white;
 
   .footer-sponsors {
     background-color: $background-light;

@@ -8,9 +8,15 @@ aside {}
 .row {}
 .wrapper {}
 
-.column-half {}
-.column-third {}
-.column-quarter {}
+.column-half {
+  width: 50%;
+}
+.column-third {
+  width: 33.333%;
+}
+.column-quarter {
+  width: 25%;
+}
 
 /* Tables */
 table {

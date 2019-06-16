@@ -15,6 +15,7 @@ p {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
+
 ul,
 ol {
   margin-top: 1.5rem;
@@ -28,10 +29,12 @@ ol ol {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 blockquote {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
 /* Headings */
 h1,
 h2,
@@ -45,26 +48,32 @@ h6 {
   margin-bottom: 0;
   line-height: 1;
 }
+
 h1 {
   font-size: 3.242rem;
   font-weight: 100;
   margin-top: 3rem;
 }
+
 h2 {
   font-size: 2.228rem;
   font-weight: 400;
   margin-top: 3rem;
 }
+
 h3 {
   font-size: 1.114rem;
   font-weight: 600;
 }
+
 h4 {
   font-size: 0.707rem;
 }
+
 h5 {
   font-size: 0.4713333333333333rem;
 }
+
 h6 {
   font-size: 0.3535rem;
 }
@@ -73,8 +82,39 @@ h6 {
 code {
   vertical-align: bottom;
 }
+
 /* Leading paragraph text */
 .lead {
   font-size: 1.414rem;
 }
 
+// Typography
+
+.text-tiny {
+  font-size: 0.8em;
+}
+
+.text-light-gray {
+  color: $text-gray;
+}
+
+.text-emphasis-bold {
+  font-weight: bold;
+}
+
+.text-emphasis-size { // TODO this is not an acceptable rule
+  font-size: $text-emphasis;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.paragraph-intro {
+  max-width: 600px;
+  font-size: $text-emphasis;
+}
+
+.text-orange {
+  color: $ember-orange;
+}

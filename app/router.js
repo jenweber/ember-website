@@ -13,6 +13,8 @@ Router.map(function() {
     this.route('release');
     this.route('beta');
     this.route('canary');
+    this.route('about');
+    this.route('lts');
   });
 });
 

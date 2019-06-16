@@ -228,5 +228,24 @@ html.no-js li:hover > a + ul, html.no-js li:focus > a + ul {
   html.no-js #nav:hover li:hover > a + ul, html.no-js #nav:hover li:focus > a + ul, html.no-js #nav:focus li:hover > a + ul, html.no-js #nav:focus li:focus > a + ul {
     display: block; } }
 
-#nav > ul > li#toggleMenu > a { background-color: $nav-togglemenu-background-color; color: $nav-togglemenu-color; }
-#nav > ul > li#toggleMenu > a:focus { background-color: darken($nav-togglemenu-background-color,20%); }
+// #nav > ul > li#toggleMenu > a { background-color: $nav-togglemenu-background-color; color: $nav-togglemenu-color; }
+// #nav > ul > li#toggleMenu > a:focus { background-color: darken($nav-togglemenu-background-color,20%); }
+
+#nav {
+  //TODO change ID to class
+  ul {
+    li {
+      #toggleMenu {
+        // TODO change IDs to classes
+        a {
+          background-color: $nav-togglemenu-background-color;
+          color: $nav-togglemenu-color;
+          &:focus {
+            background-color: darken($nav-togglemenu-background-color, 20%);
+          }
+          // TODO add hover style
+        }
+      }
+    }
+  }
+}

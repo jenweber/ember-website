@@ -1,1 +1,33 @@
-{{outlet}}
+<section class="section">
+  <h2>
+    Current Beta - {{model}}
+  </h2>
+  <p>
+    <a href="https://github.com/emberjs/ember.js/releases">Release Notes</a>
+  </p>
+
+
+  <h3>Upgrade your existing app</h3>
+  <div class="carbon-code">
+    npm install --save-dev {{model}}
+  </div>
+</section>
+
+<section class="section">
+  <h2>What is a beta release?</h2>
+
+  <p>
+    A beta release is a preview of what will eventually become the next stable release.
+    Included features are subject to change, and bugs are sometimes discovered,
+    so beta is not recommended for use in production.
+    New features stay in beta for six weeks.
+  </p>
+
+  <p>
+    Beta is used in many test suites, so that any bugs in the framework code
+    are detected quickly and fixed before the stable release.
+    Some of Ember's key contributors make a habit of working off beta and canary,
+    and even use it in production,
+    in order to volunteer their efforts as early testers.
+  </p>
+</section>

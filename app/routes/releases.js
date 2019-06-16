@@ -8,8 +8,5 @@ export default Route.extend({
         beta: '',
         canary: ''
     }
-  },
-  redirect() {
-    this.transitionTo('releases.release')
   }
 });

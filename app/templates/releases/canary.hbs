@@ -1,1 +1,39 @@
-{{outlet}}
+<section class="section">
+  <h2>
+    Canary
+  </h2>
+  <p>
+    <a href="https://github.com/emberjs/ember.js">Source Code</a>
+  </p>
+
+
+  <h3>Upgrade your existing app to canary</h3>
+  <div class="carbon-code">
+    npm install --save-dev https://s3.amazonaws.com/builds.emberjs.com{{model}}
+  </div>
+
+<h3>Upgrade Ember Data to canary</h3>
+  <div class="carbon-code">
+    npm install --save-dev emberjs/data#master
+  </div>
+</section>
+
+<section class="section">
+  <h2>What is canary?</h2>
+
+  <p>
+    "Canary" is whatever code is on the main branch of an Ember project.
+    It is unreleased, and is not recommended for production or new learners.
+    Often, features in canary are a work-in-progress.
+    They may change substantially or be removed before being released,
+    and in rare cases, they may never be released.
+  </p>
+
+  <p>
+    Canary is used in many test suites, so that any bugs in the framework code
+    are detected quickly and fixed before a beta is released.
+    Some of Ember's key contributors make a habit of working off beta and canary,
+    and even use it in production,
+    in order to volunteer their efforts as early testers.
+  </p>
+</section>

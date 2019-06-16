@@ -11,11 +11,14 @@
 
       <!-- Simple menu item without sub menu -->
       <li role="none"><a class="logo" role="menuitem" href="/"><img src="/images/brand/ember_Ember-Dark.png" alt='Ember.js logo'></a></li>
-
       <!--  Menu item with one sub menu -->
+      <li class="drop-menu" role="menuitem">
+        <LinkTo @route="learn">Learn</LinkTo>
+      </li>
       <NavDropdown @show={{action "show"}} @item="docs" @showItem={{this.docs}} @label="Docs" >
-        <li><a role="menuitem" tabindex="0" href="#">Test</a></li>
-        <li><a role="menuitem" tabindex="0" href="#">Test</a></li>
+        <li><a role="menuitem" tabindex="0" href="https://guides.emberjs.com">Ember.js Guides</a></li>
+        <li><a role="menuitem" tabindex="0" href="https://api.emberjs.com">API Reference</a></li>
+        <li><a role="menuitem" tabindex="0" href="https://cli.emberjs.com">Ember CLI Guides</a></li>
       </NavDropdown>
       <NavDropdown @show={{action "show"}} @item="releases" @showItem={{this.releases}} @label="Releases">
         <li><LinkTo @route="releases.release">Latest Stable</LinkTo></li>

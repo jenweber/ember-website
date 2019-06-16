@@ -34,6 +34,7 @@ Router.map(function() {
   this.route('ember-users');
   this.route('sponsors');
   this.route('contributing');
+  this.route('guidelines');
 });
 
 export default Router;

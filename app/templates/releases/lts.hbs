@@ -1,20 +1,26 @@
+{{#let "3.8" as |latestLTS|}}
 <section class="section">
 <h2>
-    Latest LTS (long term support) - {{model.activeLTS.lastObject}}
+    Latest LTS (long term support) - {{latestLTS}}
 </h2>
 <p>
-    <a href="https://blog.emberjs.com/2019/02/27/ember-3-8-released.html">Release Notes</a>
+    <a href="https://blog.emberjs.com/tags/releases.html">Release Notes</a>
 </p>
 
 <h3>Create a new app</h3>
-<div class="carbon-code">
-    <img src="/images/carbon-code/install-lts.svg">
-</div>
+
+<TerminalCode>
+    $ npm install -g ember-cli@{{latestLTS}}
+    <br>
+    $ ember new my-app
+</TerminalCode>
 
 <h3>Upgrade your existing app</h3>
-<div class="carbon-code">
-    <img src="/images/carbon-code/upgrade-lts.svg">
-</div>
+<TerminalCode>
+    $ npm install -g ember-cli-update
+    <br>
+    $ ember-cli-update --to {{latestLTS}}
+</TerminalCode>
 </section>
 
 <section class="section">
@@ -94,3 +100,4 @@
         developers.
     </p>
 </section>
+{{/let}}

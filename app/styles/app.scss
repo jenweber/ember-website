@@ -3,5 +3,6 @@
 @import 'main';
 @import 'accessible-navbar';
 
-
+// Please write CSS like this: component, child, context. 
+// so instead of .active-link, .link-active or .li-link-active if nesting the scss isn't enough. 
 

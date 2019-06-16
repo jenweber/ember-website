@@ -49,9 +49,7 @@ a {
   max-width: 100%;
   color: $nav-color;
 }
-  @media screen and (min-width: $media-breakpoint) {
-    #nav {
-      display: inline-block; } }
+  // @media screen and (min-width: $media-breakpoint) { }
   @media screen and (max-width: $media-breakpoint) {
     #nav {
       display: block; } }

@@ -28,6 +28,11 @@ body {
 	text-align: center;
 }
 
+.paragraph-intro {
+	max-width: 600px;
+	font-size: $text-emphasis;
+}
+
 // utility classes
 
 section {
@@ -36,7 +41,12 @@ section {
 
 .section {
 	padding: $super-padding;
+
+	&.section-top {
+		padding: 10px 5% 60px 5%;
+	}
 }
+
 
 .section-dark {
 	background-color: $background-dark;

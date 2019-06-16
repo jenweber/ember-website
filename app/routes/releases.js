@@ -9,4 +9,7 @@ export default Route.extend({
         canary: ''
     }
   },
+  redirect() {
+    this.transitionTo('releases.release')
+  }
 });

@@ -11,8 +11,9 @@ $paper-white: $background-light;
 $nav-min-height: 2.5em;
 $text-emphasis: 1.15rem;
 
-$standard-padding: 10px 5%;
+$gutters: 15%;
+$standard-padding: 10px $gutters;
 $standard-row: 10px 0 0 0;
-$generous-padding: 30px 5%;
+$generous-padding: 30px $gutters;
 $generous-row: 30px 0 10px 0;
-$super-padding: 10px 5% 60px 5%;
+$super-padding: 10px $gutters 60px $gutters;

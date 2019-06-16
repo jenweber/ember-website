@@ -18,8 +18,11 @@
         <li><a href="#">Test</a></li>
       </NavDropdown>
       <NavDropdown @show={{action "show"}} @item="releases" @showItem={{this.releases}} @label="Releases">
-        <li><a href="#">Test</a></li>
-        <li><a href="#">Test</a></li>
+        <li><LinkTo @route="releases.release">Latest Stable</LinkTo></li>
+        <li><LinkTo @route="releases.lts">Latest LTS</LinkTo></li>
+        <li><LinkTo @route="releases.beta">Beta</LinkTo></li>
+        <li><LinkTo @route="releases.canary">Canary</LinkTo></li>
+        <li><LinkTo @route="releases.about">About</LinkTo></li>
       </NavDropdown>
       <li role="none">
         <a role="menuitem" href="">Blog</a>

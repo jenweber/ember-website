@@ -10,10 +10,12 @@ export default Component.extend({
     about: false,
 
     actions: {
-        show(item) {
+        show(item, event) {
+          if(event.type == 'click' || event.key == 'Enter') {
             let current = this.get(item)
             this.resetToggles()
             this.set(item, !current)
+          }
         }
     },
 

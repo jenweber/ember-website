@@ -1,103 +1,103 @@
 {{#let "3.8" as |latestLTS|}}
 <section class="section">
-<h2>
+  <h2>
     Latest LTS (long term support) - {{latestLTS}}
-</h2>
-<p>
+  </h2>
+  <p>
     <a href="https://blog.emberjs.com/tags/releases.html">Release Notes</a>
-</p>
+  </p>
 
-<h3>Create a new app</h3>
+  <h3>Create a new app</h3>
 
-<TerminalCode>
+  <TerminalCode>
     $ npm install -g ember-cli@{{latestLTS}}
     <br>
     $ ember new my-app
-</TerminalCode>
+  </TerminalCode>
 
-<h3>Upgrade your existing app</h3>
-<TerminalCode>
+  <h3>Upgrade your existing app</h3>
+  <TerminalCode>
     $ npm install -g ember-cli-update
     <br>
     $ ember-cli-update --to {{latestLTS}}
-</TerminalCode>
+  </TerminalCode>
 </section>
 
 <section class="section">
-    <h2>LTS support schedule</h2>
+  <h2>LTS support schedule</h2>
 
-    <table class="lts-schedule table">
+  <table class="lts-schedule table">
     <thead>
-        <tr>
+      <tr>
         <td>LTS Version</td>
         <td>Released</td>
         <td>Bugfixes until:</td>
         <td>Security patches until:</td>
-        </tr>
+      </tr>
     </thead>
     <tbody>
-        <tr>
+      <tr>
         <td>
-            3.8
+          3.8
         </td>
         <td>
-            Feb 2019
+          Feb 2019
         </td>
         <td>
-            Sep 2019
+          Sep 2019
         </td>
         <td>
-            Feb 2020
+          Feb 2020
         </td>
-        </tr>
-        <tr>
+      </tr>
+      <tr>
         <td>
-            3.4
-        </td>
-        <td>
-            Oct 2018
+          3.4
         </td>
         <td>
-            May 2019
+          Oct 2018
         </td>
         <td>
-            Oct 2019
-        </td>
-        </tr>
-        <tr>
-        <td>
-            2.18
+          May 2019
         </td>
         <td>
-            Feb 2018
+          Oct 2019
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2.18
         </td>
         <td>
-            Sept 2018
+          Feb 2018
         </td>
         <td>
-            Feb 2019
+          Sept 2018
         </td>
-        </tr>
+        <td>
+          Feb 2019
+        </td>
+      </tr>
     </tbody>
-    </table>
+  </table>
 
 </section>
 
 <section class="section">
-    <h2>What is an LTS release?</h2>
+  <h2>What is an LTS release?</h2>
 
-    <p>
-        LTS versions receive bugfixes for 30 weeks and security updates for 54 weeks.
-        An LTS release is the best version to use if you won't be updating your app frequently,
-        but want to help your app stay secure and working smoothly.
-        Another reason to use an LTS is if you have a very large, complex app,
-        since LTS versions get even more testing and scrutiny than usual.
-    </p>
-    <p>
-        An LTS is declared roughly every four minor versions, plus the final version before a
-        major release. Before a version can be called an "LTS" release, it has to spend
-        at least 6 weeks as a stable release, where it is used and tested by thousands of
-        developers.
-    </p>
+  <p>
+    LTS versions receive bugfixes for 30 weeks and security updates for 54 weeks.
+    An LTS release is the best version to use if you won't be updating your app frequently,
+    but want to help your app stay secure and working smoothly.
+    Another reason to use an LTS is if you have a very large, complex app,
+    since LTS versions get even more testing and scrutiny than usual.
+  </p>
+  <p>
+    An LTS is declared roughly every four minor versions, plus the final version before a
+    major release. Before a version can be called an "LTS" release, it has to spend
+    at least 6 weeks as a stable release, where it is used and tested by thousands of
+    developers.
+  </p>
 </section>
 {{/let}}

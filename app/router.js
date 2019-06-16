@@ -23,9 +23,14 @@ Router.map(function() {
   });
   this.route('mascots', function() {
     this.route('faq');
+    this.route('commission');
   });
   this.route('logos');
   this.route('security');
+
+  this.route('masctos', function() {});
+  this.route('contribute');
+  this.route('community');
 });
 
 export default Router;

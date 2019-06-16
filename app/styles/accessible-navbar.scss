@@ -1,13 +1,6 @@
 @import 'variables';
 
-$nav-color: #ffffff;
-$nav-background-color: darken($ember-orange,6%);
-$nav-background-hover-color: darken($ember-orange,0%);
-$nav-border-color: lighten($ember-orange,10%);
-$nav-item-width: 10em;
-$nav-togglemenu-color: #fff;
-$nav-togglemenu-background-color: #165f72;
-$media-breakpoint: 47em;
+// TODO refactor to be scss. 
 
 .active-nav {
   background-color: $nav-background-color;

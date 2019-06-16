@@ -17,3 +17,12 @@ $row-standard: 10px 0 0 0;
 $padding-generous: 30px $gutters;
 $row-generous: 30px 0 10px 0;
 $padding-super: 10px $gutters 60px $gutters;
+
+$nav-color: #ffffff;
+$nav-background-color: darken($ember-orange, 6%);
+$nav-background-hover-color: darken($ember-orange, 0%);
+$nav-border-color: lighten($ember-orange, 10%);
+$nav-item-width: 10em;
+$nav-togglemenu-color: #fff;
+$nav-togglemenu-background-color: #165f72;
+$media-breakpoint: 47em;

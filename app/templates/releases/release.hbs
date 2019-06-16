@@ -1,6 +1,7 @@
+{{#let '3.10' as |latest|}}
 <section class="section">
   <h2>
-    Latest Stable - {{model.latest}}
+    Latest Stable - {{latest}}
   </h2>
   <p>
     <a href="https://blog.emberjs.com/2019/05/21/ember-3-10-released.html">Release Notes</a>
@@ -17,7 +18,7 @@
   <TerminalCode>
     npm install -g ember-cli update
     <br>
-    ember-cli-update --to {{model.latest}}
+    ember-cli-update --to {{latest}}
   </TerminalCode>
 </section>
 
@@ -43,3 +44,4 @@
   </p>
 
 </section>
+{{/let}}

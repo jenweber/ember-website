@@ -1,5 +1,5 @@
 <li role="none" class={{if @showItem "active-nav drop-menu" "drop-menu"}}>
-  <a role="menuitem" onkeyDown={{action @show @item}} onclick={{action @show @item}} tabindex="0">{{@label}} &#x25be;</a>
+  <a role="menuitem" onkeyDown={{action @show @item}} onclick={{action @show @item}} tabindex="0">{{@label}} <span class='dropdown-arrow'>&#x25be;</span></a>
   <ul class={{if @showItem "js-open js-showElement"}}>
     {{yield}}
   </ul>

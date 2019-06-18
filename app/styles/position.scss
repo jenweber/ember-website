@@ -48,3 +48,23 @@
 }
 .padding-wide {}
 
+
+//TODO transform these into padding-narrow/normal/wide
+.padding-standard {
+  padding: $padding-standard;
+}
+.padding-generous {
+  padding: $padding-generous;
+}
+
+.row-standard {
+  padding: $row-standard;
+}
+.row-generous {
+  padding: $row-generous;
+}
+
+.inset-super {
+  padding-left: 20%;
+  padding-right: 20%;
+}

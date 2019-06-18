@@ -28,24 +28,7 @@ body {
   padding: $padding-super;
 }
 
-.padding-standard {
-  padding: $padding-standard;
-}
-.padding-generous {
-  padding: $padding-generous;
-}
 
-.row-standard {
-  padding: $row-standard;
-}
-.row-generous {
-  padding: $row-generous;
-}
-
-.inset-super {
-  padding-left: 20%;
-  padding-right: 20%;
-}
 
 .half {
   width: 50%;
@@ -70,6 +53,27 @@ body {
   margin: 0 15px;
   font-size: $text-emphasis;
 }
+
+.underline-on-hover-content {
+  background-image: linear-gradient(180deg, transparent 70%, $tintedHighlightColor 0);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  display: inline;
+  // Reducing line-height to less than 1 might reduce the amount of shuddering when hovering between lines.
+  // line-height: 1.2;
+  transition: background-size .3s ease-in-out;
+  &:hover,
+  &:active,
+  &:focus {
+    background-size: 100% 100%;
+  }
+}
+.underline-on-hover-link {
+  color: #444;
+  display: block;
+  text-decoration: none;
+}
+
 
 // articles and grid items
 .article-list-half {
@@ -113,7 +117,7 @@ body {
 
 .article-icon {}
 
-// footer
+
 
 .footer-container {
   // TODO make this whole thing use css grid responsively
@@ -164,80 +168,13 @@ body {
 }
 
 // code blocks like InstallEmberCode component
-
+// TODO make sure all code samples are consistent throughout the website
 .carbon-code {
   img {
     width: 100%;
     max-width: 900px;
   }
 }
-
-// release table
-
-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin-top: 20px;
-  padding: 0;
-  width: 100%;
-}
-
-table tr {
-  border: 1px solid #ddd;
-  padding: 5px;
-}
-
-table th,
-table td {
-  padding: 10px;
-  text-align: center;
-
-}
-
-thead {
-  font-weight: bold;
-}
-
-table th {
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
-
-  table thead {
-    display: none;
-  }
-
-  table tr {
-    border-bottom: 2px solid #ddd;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  table td {
-    border-bottom: 1px dotted #ccc;
-    display: block;
-    font-size: 13px;
-    text-align: right;
-  }
-
-  table td:last-child {
-    border-bottom: 0;
-  }
-
-  table td:before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-}
-
 .terminal-code {
   background-color: $background-dark;
   border-radius: 4px;
@@ -276,6 +213,7 @@ table th {
 
 
 // team page
+// TODO refactor this. there should be NO page-specific CSS. 
 .team-member {
   display: grid;
   grid-template-columns: 40% 60%;

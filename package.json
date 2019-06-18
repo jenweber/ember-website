@@ -2,13 +2,25 @@
   "name": "ember-website",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-website goes here",
+  "description": "The Emberjs.com website",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ember-learn/ember-website.git"
+    "url": "https://github.com/ember-learn/ember-website.git"
   },
   "license": "MIT",
-  "author": "",
+  "contributors": [
+    { "name" : "Melanie Sumner",
+      "email" : "melaniersumner@gmail.com",
+      "url" : "https://github.com/MelSumner"
+    }, {
+      "name" : "Chris Manson",
+      "email" : "chris.manson@simplabs.com",
+      "url" : "https://github.com/mansona"
+    }, {
+      "name" : "Jen Weber",
+      "email" : "weberj10@gmail.com",
+      "url" : "https://github.com/jenweber"
+    }],
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -55,7 +67,7 @@
     "ember-percy": "^1.5.0",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.10.0",
-    "ember-template-lint": "^v1.0.0-beta.6",
+    "ember-template-lint": "^v1.2.0",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
     "loader.js": "^4.7.0",

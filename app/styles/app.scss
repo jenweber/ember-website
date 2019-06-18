@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'type';
 @import 'position';
+@import 'containers';
 
 @import 'main';
 @import 'accessible-navbar';
@@ -16,3 +17,5 @@
 // DO NOT USE IDs OR INLINE STYLES
 
 // write CSS in a mobile-first way, & nest media queries. 
+
+// DO NOT write page-specific CSS. Write component-specific CSS. 

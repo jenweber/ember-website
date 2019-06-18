@@ -29,3 +29,6 @@ $nav-item-width: 10em;
 $nav-togglemenu-color: #fff;
 $nav-togglemenu-background-color: #165f72;
 $media-breakpoint: 47em;
+
+$highlightTint: 0;
+$tintedHighlightColor: mix(white, $ember-orange, $highlightTint);
